@@ -7,6 +7,9 @@
           <header-tab></header-tab></div
       ></el-col>
     </el-row>
+    <div class="footer">
+      <a class="footer-item" target="_blank" href="https://beian.miit.gov.cn">京ICP备2022025646号-1</a>
+    </div>
   </div>
 </template>
 
@@ -36,5 +39,20 @@ body {
   align-items: center;
   font-size: 40px;
   margin-top: 20px;
+}
+.footer{
+  position:absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.footer-item{
+  font-size: 14px;
+  display: block;
+  text-decoration:none;
+  color: #999;
+  margin-bottom: 10px;
 }
 </style>
