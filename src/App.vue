@@ -8,7 +8,18 @@
       ></el-col>
     </el-row>
     <div class="footer">
-      <a class="footer-item" target="_blank" href="https://beian.miit.gov.cn">京ICP备2022025646号-1</a>
+      <a
+        class="footer-item"
+        target="_blank"
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802040231"
+        ><img
+          src="https://p0.meituan.net/travelcube/d0289dc0a46fc5b15b3363ffa78cf6c719256.png"
+        />京公网安备 11010802040231号</a
+      >
+
+      <a class="footer-item" target="_blank" href="https://beian.miit.gov.cn"
+        >京ICP备2022025646号-1</a
+      >
     </div>
   </div>
 </template>
@@ -40,19 +51,26 @@ body {
   font-size: 40px;
   margin-top: 20px;
 }
-.footer{
-  position:absolute;
+.footer {
+  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width: 100%;
 }
-.footer-item{
+.footer-item {
   font-size: 14px;
   display: block;
-  text-decoration:none;
+  text-decoration: none;
   color: #999;
-  margin-bottom: 10px;
+  margin: 0 10px 10px 10px;
+}
+.footer-item img {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
 }
 </style>
