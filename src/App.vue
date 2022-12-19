@@ -1,11 +1,23 @@
 <template>
   <div id="app">
     <el-row>
-      <el-col :span="24"
+      <el-col :span="4">
+        <div class="left">
+          <div class="clock">
+            <Clock></Clock>
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="16"
         ><div class="grid-content bg-purple-dark">
           <div class="header-title">嘎嘎的前端工具箱</div>
           <header-tab></header-tab></div
       ></el-col>
+      <el-col :span="4">
+        <div class="right">
+          <div class="tmp"></div>
+        </div>
+      </el-col>
     </el-row>
     <div class="footer">
       <a
@@ -25,11 +37,13 @@
 </template>
 
 <script>
-import HeaderTab from './components/HeaderTab.vue';
+import HeaderTab from "./components/HeaderTab.vue";
+import Clock from "./components/clock/index.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
     HeaderTab,
+    Clock,
   },
 };
 </script>
@@ -41,6 +55,19 @@ export default {
 }
 body {
   background: #f5f5f5;
+}
+.left,
+.right {
+  position: relative;
+}
+.clock {
+  width: 300px;
+  height: 200px;
+  margin: 40px 0 0 40px;
+}
+.tmp {
+  width: 1px;
+  height: 1px;
 }
 .header-title {
   width: 100%;

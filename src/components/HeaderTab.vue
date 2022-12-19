@@ -14,14 +14,14 @@
   </el-tabs>
 </template>
 <script>
-import QRCode from './QRCode.vue';
+import QRCode from "./QRCode.vue";
 export default {
   components: {
     QRCode,
   },
   data() {
     return {
-      activeName: 'first',
+      activeName: "first",
     };
   },
   methods: {
