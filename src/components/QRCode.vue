@@ -34,16 +34,16 @@
 </template>
 
 <script>
-import VueQrcode from 'vue-qr';
+import VueQrcode from "vue-qr";
 export default {
   components: {
     VueQrcode,
   },
   data() {
     return {
-      qrContent: '',
+      qrContent: "",
       showImgHolder: true,
-      qrContentEntrue: '',
+      qrContentEntrue: "",
     };
   },
   methods: {
@@ -54,7 +54,7 @@ export default {
         this.qrContentEntrue = this.qrContent;
       } else {
         this.showImgHolder = true;
-        this.qrContentEntrue = '';
+        this.qrContentEntrue = "";
       }
     },
   },
