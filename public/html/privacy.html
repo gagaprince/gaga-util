@@ -1,7 +1,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>隐私协议</title>
     <style>
       
@@ -81,19 +80,21 @@ blockquote {
   </script>
 
     
-<!-- CAT SDK（OWL）上报模块接入 -->
 <script>
-  
-</script>
-<!-- 线上压缩版 -->
-
-<!-- 线下测试版 -->
-
-<script>
-  
-</script>
-<!-- CAT SDK（OWL）上报模块接入 end -->
-
+  document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px'
+    document.body.style.fontSize = '14px'
+  })
+  var coverSupport =
+'CSS' in window &&
+typeof CSS.supports === 'function' &&
+(CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+  document.write(
+'<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+(coverSupport ? ', viewport-fit=cover' : '') +
+'" />',
+)
+  </script>
     
       <script>
       window.__ENV__ = 'test'
