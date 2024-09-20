@@ -15,7 +15,7 @@
       </el-col>
     </el-row>
     <el-row class="my-row" :gutter="24">
-      <el-col :span="12">
+      <el-col :span="6">
         <el-space>
           <el-text> 重命名: </el-text>
           <el-input
@@ -23,6 +23,10 @@
             type="text"
             placeholder="文件命名 img-xxxx"
           />
+        </el-space>
+      </el-col>
+      <el-col :span="6">
+        <el-space>
           <el-text> 开始下标: </el-text>
           <el-input
             v-model="formObj.startIndex"
@@ -31,10 +35,8 @@
           />
         </el-space>
       </el-col>
-      <el-col :span="3">
+      <el-col :span="6">
         <el-button type="primary" @click="download"> 保存 </el-button>
-      </el-col>
-      <el-col :span="3">
         <el-button type="primary" @click="clearImg"> 清空 </el-button>
       </el-col>
     </el-row>
@@ -304,6 +306,8 @@ export default {
 <style lang="scss" scoped>
 .img-corp-container {
   padding-bottom: 500px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 .my-row {
   margin-bottom: 20px;
