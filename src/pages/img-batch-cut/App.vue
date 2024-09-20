@@ -1,5 +1,8 @@
 <template>
   <div class="img-corp-container">
+    <div class="title-container">
+      <el-title>图片批量处理</el-title>
+    </div>
     <el-row class="my-row" :gutter="24">
       <el-col :span="6">
         <el-space>
@@ -308,6 +311,19 @@ export default {
   padding-bottom: 500px;
   max-width: 1080px;
   margin: 0 auto;
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed #a0a0a0;
+  }
+
+  el-title {
+    font-size: 48px; /* 可根据需要调整字体大小 */
+    font-weight: bold;
+  }
 }
 .my-row {
   margin-bottom: 20px;
